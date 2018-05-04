@@ -32,3 +32,14 @@ To set up a fresh deployment of this app to a local Linux or Mac OS machine:
 2) To run the app, simply navigate into the directory it is located in and run the following (passing in a movie title in quotes):
     `python omdb_api_fetch.py ["Movie title"]`
 3) The Python script should return the movie title, metacritic score, imdb score, as well as the imdb_id. The Python script takes the JSON data from the OMDB website and then reads it as a dictionary. The values being returned are being read from that dictionary object. 
+
+An example call:
+```
+ratings_api ahmedt$ python omdb_api_fetch.py "The Dark Knight"
+
+Movie: The Dark Knight
+Metascore: 82
+IMDB: 9.0
+IMBD_id: tt0468569
+
+ratings_api ahmedt$ 
